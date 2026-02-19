@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating decorations -->
+  <div class="deco deco-1">&#9733;</div>
+  <div class="deco deco-2">&#9679;</div>
+  <div class="deco deco-3">&#9651;</div>
+  <div class="deco deco-4">&#9830;</div>
+  <div class="deco deco-5">&#9733;</div>
+  <div class="deco deco-6">&#9679;</div>
+
+  <div class="container">
+    <header>
+      <h1>&#127929; ToDo &#127926;</h1>
+      <p class="subtitle">今日も楽しくタスク管理！</p>
+    </header>
+
+    <div class="input-area">
+      <input type="text" id="todo-input" placeholder="&#128161; 新しいタスクを入力..." autofocus>
+      <button id="add-btn" aria-label="タスクを追加">+</button>
+    </div>
+
+    <nav class="filters">
+      <button class="filter-btn active" data-filter="all">&#127912; すべて</button>
+      <button class="filter-btn" data-filter="active">&#9997;&#65039; 未完了</button>
+      <button class="filter-btn" data-filter="completed">&#127881; 完了済み</button>
+    </nav>
+
+    <ul id="todo-list"></ul>
+
+    <footer class="status-bar">
+      <span id="task-count">0 件のタスク</span>
+      <button id="clear-completed">&#128465;&#65039; 完了済みを削除</button>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
